@@ -1,4 +1,4 @@
-# Valkyrie9plus
+# Valkyrie9plus - V9p
 reworked library MotorWare 18
 
 # Project Overview
