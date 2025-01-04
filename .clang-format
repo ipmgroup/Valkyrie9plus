@@ -1,0 +1,41 @@
+# Run manually to reformat a file:
+# clang-format -i --style=file <file>
+# BasedOnStyle: Google
+# IndentWidth: 4
+# TabWidth: 4
+# UseTab: Never
+# ColumnLimit: 0
+# AlignConsecutiveAssignments: true
+# AlignConsecutiveDeclarations: true
+# AlignTrailingComments: true
+# KeepEmptyLinesAtTheStartOfBlocks: false
+# BreakBeforeBinaryOperators: true
+# SortIncludes: false
+
+BasedOnStyle:    LLVM
+IndentWidth:     4
+TabWidth:        4
+UseTab:          Never
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 4
+ColumnLimit:     0
+AlignAfterOpenBracket: Align
+BinPackArguments: false
+BinPackParameters: false
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros: true
+AlignEscapedNewlines: Right
+AlwaysBreakAfterReturnType: None
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass:      true
+  AfterControlStatement: false
+  AfterEnum:       true
+  AfterFunction:   false
+  AfterNamespace:  true
+  BeforeElse:      true
+  SplitEmptyFunction: true
+IndentCaseLabels: true

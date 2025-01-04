@@ -1,0 +1,9 @@
+Flash/
+Release/
+.settings/
+project.log
+build/
+
+/Flash*
+/Release*
+/can_foc/

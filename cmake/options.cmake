@@ -1,0 +1,58 @@
+if(NOT DEFINED __OPTIONS_CMAKE__)
+  set(__OPTIONS_CMAKE__ 1)
+
+  if(NOT DEFINED CACHE{TI_PRODUCTS_DIR})
+    set(TI_PRODUCTS_DIR "$ENV{HOME}/ti")
+  else()
+    set(TI_PRODUCTS_DIR "$CACHE{TI_PRODUCTS_DIR}")
+  endif()
+
+  if(NOT DEFINED CACHE{CCS_ROOT})
+    set(CCS_ROOT "${TI_PRODUCTS_DIR}/ccs1020")
+  else()
+    set(CCS_ROOT "$CACHE{CCS_ROOT}")
+  endif()
+
+  if(NOT DEFINED CACHE{CG_TOOL_ROOT})
+    set(CG_TOOL_ROOT "${CCS_ROOT}/ccs/tools/compiler/ti-cgt-c2000_20.2.2.LTS")
+  else()
+    set(CG_TOOL_ROOT "$CACHE{CG_TOOL_ROOT}")
+  endif()
+
+  if(NOT DEFINED CACHE{C2000_WARE_DIR})
+    set(C2000_WARE_DIR "${TI_PRODUCTS_DIR}/c2000/C2000Ware_3_02_00_00")
+  else()
+    set(C2000_WARE_DIR "$CACHE{C2000_WARE_DIR}")
+  endif()
+
+  if(NOT DEFINED CACHE{DEVICE_SUPPORT_ROOT})
+    set(DEVICE_SUPPORT_ROOT "${C2000_WARE_DIR}/device_support")
+  else()
+    set(DEVICE_SUPPORT_ROOT "$CACHE{DEVICE_SUPPORT_ROOT}")
+  endif()
+
+  if(NOT DEFINED CACHE{MW_INSTALL_DIR})
+    set(MW_INSTALL_DIR "${TI_PRODUCTS_DIR}/motorware/motorware_1_01_00_18")
+  else()
+    set(MW_INSTALL_DIR "$CACHE{MW_INSTALL_DIR}")
+  endif()
+
+  if(NOT DEFINED CACHE{UNIFLASH_PATH})
+    if(EXISTS "${TI_PRODUCTS_DIR}/uniflash_6.3.0/dslite.sh")
+      set(UNIFLASH_PATH "${TI_PRODUCTS_DIR}/uniflash_6.3.0/dslite.sh")
+    elseif(EXISTS "${CCS_ROOT}/ccs/ccs_base/DebugServer/bin/DSLite")
+      set(UNIFLASH_PATH "${CCS_ROOT}/ccs/ccs_base/DebugServer/bin/DSLite")
+    endif()
+    message(STATUS ${UNIFLASH_PATH})
+  else()
+    set(UNIFLASH_PATH "$CACHE{UNIFLASH_PATH}")
+  endif()
+
+  if(NOT DEFINED CACHE{TARGET_CONFIG})
+    set(TARGET_CONFIG
+        "${MW_INSTALL_DIR}/sw/ide/ccs/ccs5/targetConfigs/TMS320F28069_xds100v2.ccxml"
+    )
+  else()
+    set(TARGET_CONFIG "$CACHE{TARGET_CONFIG}")
+  endif()
+endif()

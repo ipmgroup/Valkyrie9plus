@@ -1,0 +1,14 @@
+{
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "main_env.h": "c",
+        "dronecan.h": "c",
+        "proj_utils.h": "c",
+        "compare": "cpp",
+        "cstdint": "cpp",
+        "user.h": "c"
+    },
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.renderWhitespace": "all"
+}
