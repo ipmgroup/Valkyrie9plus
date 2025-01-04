@@ -38,3 +38,6 @@ reworked library MotorWare 18
 - Debug and controller state information is transmitted over **CAN bus** and can be viewed using **DroneCAN GUI**.
   - This provides convenient monitoring of system parameters such as sensor states, controller configurations, diagnostic messages, and more.
 
+### 10. Added Sound Playback Capability
+- Added the ability to play sound.
+- To generate sound headers with notes, use a Python script for efficient and flexible sound integration.
