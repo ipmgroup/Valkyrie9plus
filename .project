@@ -232,17 +232,6 @@
 			<locationURI>MW_INSTALL_DIR/sw/drivers/wdog/src/32b/f28x/f2806x/wdog.c</locationURI>
 		</link>
 	</linkedResources>
-	<filteredResources>
-		<filter>
-			<id>1733748923956</id>
-			<name></name>
-			<type>26</type>
-			<matcher>
-				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-projectRelativePath-matches-false-false-build</arguments>
-			</matcher>
-		</filter>
-	</filteredResources>
 	<variableList>
 		<variable>
 			<name>C2000_WARE_DIR</name>
