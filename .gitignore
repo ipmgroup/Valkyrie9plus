@@ -7,3 +7,5 @@ build/
 /Flash*
 /Release*
 /can_foc/
+/DRV8305/
+/DRV8305_5010_750KV/

@@ -64,6 +64,7 @@
 #define MOTOR_Marathon_5K33GN2A     8
 #define MOTOR_Bluerobotics_t200     9
 #define MOTOR_B2212_920             10
+#define MOTOR_5010_750KV            11
 
 #ifndef MOTOR
 #define MOTOR MOTOR_Bluerobotics_t200
@@ -83,6 +84,8 @@
 #include "motor_Bluerobotics_t200.h"
 #elif MOTOR == MOTOR_B2212_920
 #include "motor_B2212_920.h"
+#elif MOTOR == MOTOR
+#include "motor_5010_750KV.h"
 
 // IPM motors
 #elif MOTOR == MOTOR_Anaheim_Salient
