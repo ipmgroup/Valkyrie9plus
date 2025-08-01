@@ -15,9 +15,11 @@
 #define BOARD_EPC9186_j1             9
 #define BOARD_EPC9173_j1             10
 #define BOARD_EPC9167_j1             11
+#define BOARD_ka2000_EPC9167         12
+#define BOARD_ka2000_EPC9146         13
 
 #ifndef BOARD
-#define BOARD BOARD_TMS320F28069M_8305_j1
+#define BOARD BOARD_ka2000_EPC9146
 #endif
 
 // Defines for GPIO configuration
@@ -48,6 +50,10 @@
 #define BOARD_HEADER "board_EPC9173_j1.h"
 #elif BOARD == BOARD_EPC9167_j1
 #define BOARD_HEADER "board_EPC9167_j1.h"
+#elif BOARD == BOARD_ka2000_EPC9167
+#define BOARD_HEADER "board_ka2000_EPC9167.h"
+#elif BOARD == BOARD_ka2000_EPC9146
+#define BOARD_HEADER "board_ka2000_EPC9146.h"
 #else
 #error "Unsupported BOARD selected"
 #endif
