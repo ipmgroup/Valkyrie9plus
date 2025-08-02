@@ -17,9 +17,11 @@
 #define BOARD_EPC9167_j1             11
 #define BOARD_ka2000_EPC9167         12
 #define BOARD_ka2000_EPC9146         13
+#define BOARD_ka2000_EPC9186         14
+
 
 #ifndef BOARD
-#define BOARD BOARD_ka2000_EPC9146
+#define BOARD BOARD_ka2000_EPC9167
 #endif
 
 // Defines for GPIO configuration
@@ -54,6 +56,8 @@
 #define BOARD_HEADER "board_ka2000_EPC9167.h"
 #elif BOARD == BOARD_ka2000_EPC9146
 #define BOARD_HEADER "board_ka2000_EPC9146.h"
+#elif BOARD == BOARD_ka2000_EPC9186
+#define BOARD_HEADER "board_ka2000_EPC9186.h"
 #else
 #error "Unsupported BOARD selected"
 #endif
@@ -73,7 +77,7 @@
 #define MOTOR_5010_750KV            11
 
 #ifndef MOTOR
-#define MOTOR MOTOR_Bluerobotics_t200
+#define MOTOR MOTOR_HACKER_A40_14L 
 #endif
 
 #if MOTOR == MOTOR_Estun_EMJ_04APB22

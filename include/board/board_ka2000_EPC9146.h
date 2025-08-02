@@ -26,7 +26,7 @@
 #define HW_REV_MINOR 1
 
 #define DRV_NAME      "EPC9146"
-#define APP_NODE_NAME "EPC9146"
+#define APP_NODE_NAME "KA_EPC9146"
 
 #define LED_BLINK_FREQ_Hz 4
 
