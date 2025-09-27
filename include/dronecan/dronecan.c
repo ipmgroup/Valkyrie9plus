@@ -412,6 +412,7 @@ static void handle_param_ExecuteOpcode(CanardInstance *ins, CanardRxTransfer *tr
     }
     if (req.opcode == UAVCAN_PROTOCOL_PARAM_EXECUTEOPCODE_REQUEST_OPCODE_ERASE) {
         gUserBaseParams = (USER_Params_FLASH)USER_FLASH_INIT;
+        can_printf("Set to Default parameters", UAVCAN_PROTOCOL_DEBUG_LOGLEVEL_INFO);
         // here is where you would reset all parameters to defaults
     }
     if (req.opcode == UAVCAN_PROTOCOL_PARAM_EXECUTEOPCODE_REQUEST_OPCODE_SAVE) {
